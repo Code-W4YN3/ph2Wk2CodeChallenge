@@ -31,6 +31,10 @@
   word-wrap: break-word;
 }
 
+.X{
+  background-color: red;
+}
+
 .botDiv{
   overflow-x: hidden;
   overflow-y: auto;

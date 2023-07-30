@@ -1,5 +1,5 @@
 import './App.css';
-import BotCollection from './botCollection';
+import BotLists from './botLists';
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <h1>Bot Battlr</h1>
       <div className='botCollection'>
       <h2>Bot Collection</h2>
-      <BotCollection />
+      <BotLists />
       </div>
     </>
   );
