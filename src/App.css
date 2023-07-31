@@ -13,6 +13,8 @@
 .botCollection{
   border-style: solid;
   border-color: black;
+  margin-bottom: 0;
+  padding: 2%;
 }
 
 .botImage{

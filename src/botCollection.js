@@ -2,8 +2,9 @@ import Bot from "./bot";
 
 function BotCollection({ bots, handleAdd, removeFromArmy }){
   return(
+  <>
+  <h1 className="botCollection">Bot Collection</h1>
   <div className="botDiv">
-    <h1>Bot Collection</h1>
     {bots.map((bot, key) => (
       <Bot 
       key={key} 
@@ -15,6 +16,7 @@ function BotCollection({ bots, handleAdd, removeFromArmy }){
     ))
     }
   </div>
+  </>
   )
 }
 

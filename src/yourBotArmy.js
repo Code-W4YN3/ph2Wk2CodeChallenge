@@ -2,8 +2,9 @@ import Bot from "./bot";
 
 function BotArmy({ army, handleRemove, removeFromArmy }){
   return(
+  <>
+  <h1 className="botCollection">Your Army</h1>
   <div className="botDiv">
-    <h1>Your Army</h1>
     {army.map((bot, key) => (
       <Bot 
         key={key} 
@@ -15,6 +16,7 @@ function BotArmy({ army, handleRemove, removeFromArmy }){
     ))
     }
   </div>
+  </>
   )
 }
 
