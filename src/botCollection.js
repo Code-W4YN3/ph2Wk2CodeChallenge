@@ -1,16 +1,20 @@
-
 import Bot from "./bot";
 
-function BotCollection({ bots }){
+function BotCollection({ bots, handleAdd, removeFromArmy }){
   return(
-    <div className="botDiv">
-      {bots.map((bot) => (
-        <Bot 
-          key={bot.id}
-          bot={bot}
-        />
-      ))}
-    </div>
+  <div className="botDiv">
+    <h1>Bot Collection</h1>
+    {bots.map((bot, key) => (
+      <Bot 
+      key={key} 
+      bot={bot} 
+      handleAdd={handleAdd} 
+      removeFromArmy={removeFromArmy} 
+      inCollection={true}
+      />
+    ))
+    }
+  </div>
   )
 }
 
