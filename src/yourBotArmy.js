@@ -8,7 +8,7 @@ function BotArmy({ army, handleRemove, removeFromArmy }){
       <Bot 
         key={key} 
         bot={bot} 
-        handleRemove={handleRemove} 
+        handleAdd={handleRemove} 
         removeFromArmy={removeFromArmy} 
         inCollection={false}
       />
